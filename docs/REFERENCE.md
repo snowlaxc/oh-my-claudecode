@@ -617,7 +617,7 @@ Marketplace/plugin installs compact the native plugin `skills/*/SKILL.md` files 
 Each installed skill is exposed as `/oh-my-claudecode:<skill-name>`. The skills table above is the full runtime-backed list; the commands below highlight common entrypoints and aliases. Compatibility keyword modes like `deep-analyze` and `tdd` are prompt-triggered behaviors, not standalone slash commands.
 
 | Command                                                  | Description                                                                                   |
-| -------------------------------------------------------- | --------------------------------------------------------------------------------------------- | ------ | ------- |
+| -------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | `/oh-my-claudecode:ai-slop-cleaner <target>`             | Run the anti-slop cleanup workflow (`--review` for reviewer-only pass)                        |
 | `/oh-my-claudecode:ask <claude\|codex\|gemini> <prompt>` | Route a prompt through the selected advisor CLI and capture an ask artifact                   |
 | `/oh-my-claudecode:autopilot <task>`                     | Full autonomous execution                                                                     |
@@ -632,7 +632,7 @@ Each installed skill is exposed as `/oh-my-claudecode:<skill-name>`. The skills 
 | `/oh-my-claudecode:omc-teams <N>:<agent> <task>`         | Spawn `claude`/`codex`/`gemini` tmux workers for legacy parallel execution                    |
 | `/oh-my-claudecode:project-session-manager <arguments>`  | Manage isolated dev environments with git worktrees + tmux                                    |
 | `/oh-my-claudecode:psm <arguments>`                      | Deprecated alias for project session manager                                                  |
-| `/oh-my-claudecode:ralph <task>`                         | Self-referential loop until task completion (`--critic=architect                              | critic | codex`) |
+| `/oh-my-claudecode:ralph <task>`                         | Self-referential loop until task completion (`--critic=architect \| critic \| codex`)         |
 | `/oh-my-claudecode:ralplan <description>`                | Iterative planning with consensus structured deliberation (`--deliberate` for high-risk mode) |
 | `/oh-my-claudecode:release`                              | Automated release workflow                                                                    |
 | `/oh-my-claudecode:setup`                                | Unified setup entrypoint (`setup`, `setup doctor`, `setup mcp`)                               |
